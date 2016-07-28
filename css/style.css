@@ -386,7 +386,7 @@ header .intro-text .intro-heading {
 figure {
 	position: relative;
 	overflow: hidden;
-	margin: 0 1px px 0;
+	margin: 0 1px 1px 0;
 	background: #726FB9;
 	text-align: center;
 	cursor: pointer;	
@@ -845,5 +845,6 @@ and (max-width : 480px) {
 }
 
 #googlemap {
+	position:relative;
 	margin-left:590px;
 }
