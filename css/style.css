@@ -843,3 +843,7 @@ and (max-width : 480px) {
 	font-size: 20px;
 }
 }
+
+#googlemap {
+	margin-left:590px;
+}
