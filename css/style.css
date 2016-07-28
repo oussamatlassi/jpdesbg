@@ -1,23 +1,18 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-
 Project:	Sanza - One page multi purpose page
 Version:	1.0
 Last change:	17/08/2015 [...]
 Designed by:	MOOZ Themes / www.MOOZthemes.com
 Primary use:	One page
-
 [Table of contents]
-
 1. General
 2. Header
 3. Navigation
 4. Sections
 5. Footer
 6. Components
-
 [Color codes]
-
 Buttons, etc:	#726FB9 (blue)
 hover color:	#fed136 (yellow)
 -------------------------------------------------------------------*/
@@ -209,7 +204,6 @@ section ul li:before {
 		margin-top: 10px;
 	}
 }
-
 
 /*--------------------
 3. Header
