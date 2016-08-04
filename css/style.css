@@ -859,6 +859,7 @@ and (max-width : 480px) {
 	#googleframe {
 	width:310px;
 	height:250px;
+	display:none;
 }
 }
 
