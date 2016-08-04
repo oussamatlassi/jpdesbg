@@ -841,10 +841,10 @@ and (max-width : 480px) {
 
 #googlemap {
 	position:relative;
-	margin-left:55%;
+	margin-left:45%;
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:985px)
 {
 	#googlemap {
 	position:absolute;
