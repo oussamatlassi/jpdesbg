@@ -841,14 +841,18 @@ and (max-width : 480px) {
 
 #googlemap {
 	position:relative;
-	margin-left:45%;
+	margin-left:55%;
 }
 
 @media screen and (max-width:985px)
 {
 	#googlemap {
 	position:absolute;
-	margin-left:100px;
+	margin-left:200px;
+}
+	#googleframe {
+	width:310px;
+	height:250px;
 }
 }
 
