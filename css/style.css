@@ -204,6 +204,12 @@ section ul li:before {
 		margin-top: 10px;
 	}
 }
+@media screen and (max-width: 640px) {
+	.navbar
+	{
+		display:none;
+		}
+		}
 
 /*--------------------
 3. Header
