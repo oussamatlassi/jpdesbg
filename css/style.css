@@ -850,11 +850,10 @@ and (max-width : 480px) {
 	margin-left:55%;
 }
 
-@media screen and (max-width:985px)
+@media screen and (max-width:585px)
 {
-	#googlemap {
-	position:absolute;
-	margin-left:200px;
+	#video {
+	display:none;
 }
 	#googleframe {
 	width:310px;
