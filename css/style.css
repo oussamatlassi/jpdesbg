@@ -850,7 +850,7 @@ and (max-width : 480px) {
 	margin-left:55%;
 }
 
-@media screen and (max-width:585px)
+@media screen and (max-width:985px)
 {
 	#video {
 	width: 100%;
