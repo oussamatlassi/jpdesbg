@@ -6,11 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msvalidate.01" content="E324AB37C7A5B408AF5A5D42E8F9CE18" />
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Prendre RDV avec le Docteur Atlassi Mohammed - Sexologue à Casablanca - Maroc 
-		Trésorier de l'Association Marocaine de Sexologie - Diplômé de la faculté de médecine de Montpellier">
+		<meta name="description" content="Jouer au Juste prix des Beaux Gosses par O.A">
 		<meta name="author" content="O.A">
 		<link rel="icon" href="images/favicon.ico">
-		<title>Dr Atlassi - Votre sexologue à Casablanca - Maroc</title>
+		<title>Le Juste prix des BG</title>
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -18,6 +17,70 @@
 		<link href="css/owl.carousel.css" rel="stylesheet">
 		<link href="css/owl.theme.default.min.css"  rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<script type="text/javascript">
+		<!--
+		function nb_aleatoire(min, max)
+		{
+     		var nb = min + (max-min+1)*Math.random();
+     		return Math.floor(nb);
+		}
+          
+        	function jp_manche(min, max)
+		{
+		     var nb = nb_aleatoire(min, max);        // nb a deviner
+		     var cpt = 0;    // nb de coups pour le trouver
+		     var saisie;     // nb tape par le joueur
+		     var msg = 'Le nombre a deviner est compris entre ' + min + ' et ' + max + '.';
+
+		     do
+		     {
+		          saisie = prompt(msg);
+
+		          // si "Annuler"
+		          if(saisie == null)
+		               return 0;
+
+		          cpt++;
+		          if(saisie > nb)
+		               msg = "C'est moins amigo";
+		          else
+		               msg = "C'est plus poto";
+		     }
+		     while(saisie != nb);
+
+		     return cpt;
+		}
+
+		function jp_partie(min, max)
+		{
+		     var cpt = 0;    // nb de manches jouees
+		     var best_score = 0;     // meilleur score
+		     var score;      // score de la partie en cours
+		     var continuer;
+
+		     do
+		     {
+		          score = jp_manche(min, max);   // joue la manche
+		          if(score)
+		          {
+		               cpt++;
+		               if(score < best_score || best_score == 0)
+		                    best_score = score;
+		               continuer = confirm("C'est le juste prix !! Bravo, tu es un beau gosse c'est sûr, tu as gagne en " + score + " coups.\nTu veux rejouer ?");
+		          }
+		          else
+		               continuer = false;
+		     }
+		     while(continuer);
+
+		     alert("Tu as joue " + cpt + " manche(s).\nTon meilleur score est de " + best_score + " coups. \n C'est du meilleur score de beau gosse mais tu peux encore progresser alors go !");
+		     return best_score;
+		}
+
+		
+		//-->
+		</script>
+
 	</head>
 	<body id="page-top">
 		<!-- Navigation -->
@@ -40,17 +103,17 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#about">Mes services</a>
+							<a class="page-scroll" href="#" onclick="javascript:jp_partie(1,50);">Niveau Easy BG</a>
 						</li>
 						
 						<li>
-							<a class="page-scroll" href="#portfolio">Mes Publications</a>
+							<a class="page-scroll" href="#" onclick="javascript:jp_partie(1,250);">Niveau Semi BG</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="event.html">Actualité</a>
+							<a class="page-scroll" href="#" onclick="javascript:jp_partie(1,1000);">Niveau Maxi BG</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
+							<a class="page-scroll" href="#" onclick="javascript:jp_partie(1,10000);">Niveau HARDCORE LIFE B-GEEK rien à foutre de ta life</a>
 						</li>
 					</ul>
 				</div>
@@ -63,326 +126,14 @@
 			<div class="container">
 				<div class="slider-container">
 					<div class="intro-text">
-						<div class="intro-lead-in">Bienvenue sur le site du <strong>Dr Atlassi</strong></div>
-						<div class="intro-heading">VOTRE EXPERT SEXOLOGUE PSYCHOSOMATICIEN</div>
+						<div class="intro-lead-in">Votre jeu tout droit sorti des 80's</div>
+						<div class="intro-heading">LE JUSTE PRIX DES BEAUX GOSSES</div>
 						<a href="#about" class="page-scroll btn btn-xl">En savoir plus</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="about" class="dark-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="section-title">
-							<h2>Mes services</h2>
-							<p>Trésorier de <a href="http://www.sexologie-maroc.org/portal/index.php" target="_blank"><strong>l'Association Marocaine de Sexologie (AMS)</strong></a><strong>- Membre titulaire de <a href="http://www.aius.fr/v2/" target="_blank">l'AIUS</strong></a> : association interdisciplinaire Post universitaire de Sexologie de France -  <strong>Diplômé en échographie clinique</strong> de la faculté de médecine de Montpellier - <strong>Médecin expert</strong> près les tribunaux</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<!-- about module -->
-					<div class="col-md-3 text-center">
-						<div class="mz-module-about">
-							<img src="images/doctor.png" alt="Sexothérapie individuelle chez le Docteur Atlassi Sexologue à Casablanca" width="100" height="100">
-							<h3>Sexothérapie individuelle</h3>
-							<p></p>
-						</div>
-					</div>
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 text-center">
-						<div class="mz-module-about">
-							<img src="images/couple.png" alt="Sexothérapie de couple possible chez le Docteur Atlassi Sexologue à Casablanca" width="100" height="100">
-							<h3>Sexothérapie de couple</h3>
-							<p></p>
-						</div>
-					</div>
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 text-center">
-						<div class="mz-module-about">
-							<img src="images/demo/virus.png" alt=" Infections sexuellement transmissibles - traitement chez le Docteur Atlassi Sexologue à Casablanca" width="100" height="100">
-							<h3>Infections sexuellement transmissibles</h3>
-							<p></p>
-						</div>
-					</div>
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 text-center">
-						<div class="mz-module-about">
-							<img src="images/logo.png" alt="Médecine générale chez le Docteur Atlassi Sexologue à Casablanca" width="100" height="100">
-							<h3>Médecine Générale</h3>
-							<p> </p>
-						</div>
-					</div>
-					<!-- end about module -->
-				</div>
-			</div>
-			<!-- /.container -->
-		</section>
 		
-
-		<section id="portfolio">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="section-title">
-						<h2>Mes Publications</h2>
-						<p>Découvrez <strong>mes publications et contributions</strong> sur des thématiques aussi diverses que <a href="http://aujourdhui.ma/societe/mohamed-atlassi-le-manque-deducation-sexuelle-rend-impossible-lapproche-de-la-frigidite-avec-la-femme-marocaine-95290" target="_blank">la frigidité féminine</a>, <a href="http://aujourdhui.ma/societe/mohammed-atlassi-lexces-ponderal-modifie-la-relation-de-communication-du-couple-95331" target="_blank">les conséquences de l'obésité sur votre couple</a> ou <a href="http://aujourdhui.ma/societe/mohamed-atlassi-les-preliminaires-preparent-le-corps-a-plus-dintimite-95484" target="_blank">mon analyse de l'utilité des préliminaires dans la relation homme-femme</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row row-0-gutter">
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/frigidite.jpg" alt="image illustrant la frigidité sexuelle de la femme marocaine d'après une analyse du Docteur Atlassi Sexologue à Casablanca Maroc" class="img-responsive" width="484" height="646"/>
-							<figcaption>
-								<h2>Frigidité & Femme marocaine</h2>
-								<a href="http://aujourdhui.ma/societe/mohamed-atlassi-le-manque-deducation-sexuelle-rend-impossible-lapproche-de-la-frigidite-avec-la-femme-marocaine-95290" data-toggle="modal" data-target="#Modal-1">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/obesite.jpg" alt="image illustrant Obesité & Couple Docteur Atlassi Mohammed Sexologue à Casablanca Maroc" class="img-responsive" width="484" height="646"/>
-							<figcaption>
-								<h2>Obésite & Couple</h2>
-								<a href="#" data-toggle="modal" data-target="#Modal-2">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/preliminaires.jpg" alt="Image illustrant Le rôle des préliminaires dans un couple Docteur Atlassi Mohammed Sexologue à Casablanca Maroc" class="img-responsive" width="484" height="646" />
-							<figcaption>
-								<h2>Le rôle des préliminaires</h2>
-								<a href="#" data-toggle="modal" data-target="#Modal-3">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-			</div>
-			<div class="row row-0-gutter">
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/pointg.jpg" alt="image illustrant l'article le Point chez et les femmes au Maroc d'après une analyse du Docteur Atlassi Sexologue à Casablanca Maroc" class="img-responsive" width="484" height="646"/>
-							<figcaption>
-								<h2>Point G & Femme Marocaine</h2>
-								<a href="#" data-toggle="modal" data-target="#Modal-4">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/frigiditedeux.jpg" alt="image illustrant l'article sur la frigidité et le froid causé dans le couple  au Maroc simplement cité car très bon par le Docteur Atlassi Sexologue à Casablanca Maroc dans Aujourd'hui le Maroc" class="img-responsive" />
-							<figcaption>
-								<h2>Frigidité & Couple</h2>
-								<a href="#" data-toggle="modal" data-target="#Modal-5">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- start portfolio item -->
-				<div class="col-md-4 col-0-gutter">
-					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
-							<img src="images/demo/mst.png" alt="image illustrant l'article sur les MST et IST au Maroc simplement cité car très bon par le Docteur Atlassi Sexologue à Casablanca Maroc dans Aujourd'hui le Maroc " class="img-responsive" width="484" height="646"/>
-							<figcaption>
-								<h2>MST & IST</h2>
-								<a href="#" data-toggle="modal" data-target="#Modal-6">En savoir plus</a>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-			</div>
-			</div><!-- end container -->
-		</section>
-
-		
-
-		
-		
-		<section id="contact" class="dark-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="section-title">
-							<h2>Contact</h2>
-							<p>Des questions ou besoin d'aide ? N'hésitez pas à me contacter, je suis <strong>à votre écoute !</strong><br><strong>Vous soigner est ma vocation depuis 32 ans !</strong></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="section-text">
-							<h4>Cabinet Médical du Dr Atlassi - Sexologue à Casablanca</h4>
-							<p>Résidence Al Ahali Escalier E, 1er étage App. 197 - Sidi Maârouf En Face CEMA Au dessus du Crédit Agricole - CASABLANCA</p>
-							<p><i class="fa fa-phone"></i> 05 22 33 52 49</p>
-							<p><i class="fa fa-phone"></i> 06 61 13 60 72</p>
-							<p><i class="fa fa-envelope"></i> dratlassi@gmail.com </p>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="section-text">
-							<h4>Horaires d'ouverture</h4>
-							<p><i class="fa fa-clock-o"></i> <span class="day">Du Lundi au Vendredi : </span><span>De 9h à 13h - de 15h à 19h</span></p>
-							<p><i class="fa fa-clock-o"></i> <span class="day">Samedi : </span><span>De 9h à 13h</span></p>
-							<p><i class="fa fa-clock-o"></i> <span class="day">Dimanche : </span><span>Fermé</span></p>
-						</div>
-					</div>
-					<div id="googlemap"><iframe id="googleframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4435529651137!2d-7.655812885232809!3d33.51585168075531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d000dd04f73%3A0x2e766629a1eefef0!2sR%C3%A9sidence+Al+Ahali!5e0!3m2!1sfr!2sfr!4v1469480529991" width="550" height="310" frameborder="0" style="border:0" allowfullscreen></iframe></div>				
-				</div>
-			</div>
-			
-			</div>
-		</section>
-		<p id="back-top">
-			<a href="#top"><i class="fa fa-angle-up"></i></a>
-		</p>
-		<footer>
-			<div class="container text-center">
-				<p>CREATED BY <a href="https://www.linkedin.com/in/oussamaatlassi?trk=nav_responsive_tab_profile_pic" target="_blank"><span>O.A</span></a></p>
-			</div>
-		</footer>
-
-		<!-- Modal for portfolio item 1 -->
-		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-1">Frigidité & Femme marocaine</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://aujourdhui.ma/societe/mohamed-atlassi-le-manque-deducation-sexuelle-rend-impossible-lapproche-de-la-frigidite-avec-la-femme-marocaine-95290" target="_blank"><center><img src="images/demo/frigidite.jpg" alt="Le manque d'éducation sexuelle rend impossible l'approche de la frigidité avec la femme marocaine - analyse du Docteur Atlassi Mohammed Sexologue psychosomaticien à Casablanca dans Aujourd'hui le Maroc" class="img-responsive" width="484" height="646" /></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>Frigidité</span><span>Femme marocaine</span></div>
-						<p><i>Le manque d’éducation sexuelle rend impossible l’approche de la question de la frigidité chez la femme marocaine</i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 2 -->
-		<div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-2">Obésite & Couple</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://aujourdhui.ma/societe/mohammed-atlassi-lexces-ponderal-modifie-la-relation-de-communication-du-couple-95331" target="_blank"><center><img src="images/demo/obesite.jpg" alt="L’excès pondéral modifie la relation de communication du couple - analyse du Docteur Atlassi Mohammed Sexologue psychosomaticien à Casablanca dans Aujourd'hui le Maroc" class="img-responsive" width="484" height="646"/></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>Obésité</span><span>Couple</span></div>
-						<p><i>L’excès pondéral modifie la relation de communication du couple</i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 3 -->
-		<div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-3">Préliminaires & Couples</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://aujourdhui.ma/societe/mohamed-atlassi-les-preliminaires-preparent-le-corps-a-plus-dintimite-95484" target="_blank"><center><img src="images/demo/preliminaires.jpg" alt="image illustrant l'article sur le rôle des préliminaires dans un couple d'après une analyse du Docteur Atlassi sexologue psychosomaticien à Casablanca dans Aujourd'hui le Maroc" class="img-responsive" /></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>Préliminaires</span><span>Maintenir la flamme</span></div>
-						<p><i>Les préliminaires préparent le corps à plus d’intimité</i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 4 -->
-		<div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-4">Le Point G</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://aujourdhui.ma/societe/mohamed-atlassi-toutes-les-femmes-devraient-posseder-le-point-g-95512" target="_blank"><center><img src="images/demo/pointg.jpg" alt="image illustrant l'article sur le Point G chez les femmes d'après une analyse du Docteur Atlassi sexologue psychosomaticien à Casablanca dans Aujourd'hui le Maroc" class="img-responsive" width="484" height="646"/></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>Femme Marocaine</span><span>Point G</span></div>
-						<p><i>Toutes les femmes devraient posséder le point G</i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 5 -->
-		<div class="modal fade" id="Modal-5" tabindex="-1" role="dialog" aria-labelledby="Modal-label-5">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-5">Frigidité & Couple</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://aujourdhui.ma/societe/frigidite-un-vent-glacial-dans-la-vie-des-couples-95291" target="_blank"><center><img src="images/demo/frigiditedeux.jpg" alt="image illustrant l'article sur la frigidité qui cause un froid dans le couple d'après une analyse du Docteur Atlassi Sexologue psychosomaticien à Casablanca" class="img-responsive" width="484" heigth="646" /></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>Frigidité</span><span>Froid</span></div>
-						<p><i>Il existe des femmes insensibles aux attractions sexuelles. La froideur a rongé leur libido et les a rendues indifférentes face aux sex appeal de leurs conjoints.</i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Modal for portfolio item 6 -->
-		<div class="modal fade" id="Modal-6" tabindex="-1" role="dialog" aria-labelledby="Modal-label-6">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-6">MST & IST au Maroc</h4>
-					</div>
-					<div class="modal-body">
-						<a href="http://telquel.ma/2016/05/11/el-ouardi-440-000-marocains-atteints-mst-en-2015_1496484" target="_blank"><center><img src="images/demo/mst.png" alt="image illustrant l'article sur les MST et IST au Maroc simplement cité car très bon par le Docteur Atlassi Sexologue psychosomaticien à Casablanca" class="img-responsive" width="646" height="484"/></center><span>Cliquez pour Lire l'article</span></a>
-						<div class="modal-works"><span>MST</span><span>IST</span><span>Maroc</span></MAIN></div>
-						<p><i>Près de 440 000 marocains étaient atteints de maladies sexuellement transmissibles en 2015</i></i></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
 		<!-- Bootstrap core JavaScript
